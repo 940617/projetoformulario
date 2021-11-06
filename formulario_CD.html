@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENTREVISTA</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #area{
+            position: absolute;
+            top : 50%;
+            left : 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0,0, 0, 0.1);
+            padding: 15px;
+            border-radius: -15px;
+        }
+      .inputArea{
+          position: relative;
+
+      }
+      .inputUsuario{
+          background: none;
+          border : none;
+          border-bottom: 1px solid blue;
+          font-size: 130%;
+      }
+
+        fieldset{
+            border: 3px solid rgb(25, 52, 173);
+        }
+        legend{
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(222, 237, 240) ;
+            border-radius: 8px;
+
+        }
+
+#submit{
+    background-color: rgb(113, 113, 221);
+    width: 100%;
+    border: none;
+    padding: 5px;
+    color: rgb(4, 4, 19);
+    font-size: 15 px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover {
+    background-color: rgb(73, 73, 238);
+}
+
+.destaque{
+            border: solid 10px yellow;
+            color:black;
+            font-weight: bold;   
+        }
+
+form{
+    animation-name: escala;
+    animation-duration: 1s;
+}
+
+
+
+        @keyframes escala{
+            from{
+                transform: scale(0.8);
+            }
+            to{
+                transform: scale(1);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="area">
+<form action="">
+    <fieldset>
+<legend><b>Registo de cliente</b></legend>
+<br>
+<div class="inputArea">
+    <input type="text" id="nome" placeholder="Nome completo" class="inputUsuario" required>
+    <br><br>
+</div>
+<div class="inputArea">
+    <input type="tel" id="telefone" placeholder="Telefone" class="inputUsuario" required>
+    <br>
+    <p>Sexo:</p>
+    <input type="radio" id="feminino">
+    <label for="">feminino</label>
+    <input type="radio" id="masculino">
+    <label for="">masculino</label>
+    <input type="radio" id="outros">
+    <label for="">outros</label>
+    <br><br>
+</div>
+<div class="inputArea">
+    <input type="cidade" id="cidade" placeholder="Cidade" class="inputUsuario" required>
+    <br><br>
+</div>
+<div class="inputArea">
+    <input type="estado" id="estado" placeholder="Estado" class="inputUsuario" required>
+    <br><br>
+</div>
+<input type="submit" id="submit" value = "ENVIAR">
+    </fieldset>
+</form>
+    </div>
+
+
+</body>
+</html> 
