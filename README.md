@@ -10,4 +10,8 @@ git commit -m => para salvar realmente as modificações, eu uso um novo nome pa
 
 git log => mostra todos as modificações feitas no git, detalhadamente.
 
+git resert --hard => colar a chave de indentificação da versão que deseja
+
+
+
 
