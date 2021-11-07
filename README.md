@@ -12,6 +12,6 @@ git log => mostra todos as modificações feitas no git, detalhadamente.
 
 git resert --hard => colar a chave de indentificação da versão que deseja
 
+git push ou git push origin master => para enviar o arquivo para o github
 
-
-
+git pull => para puxar as atualizações do github para meu repositorio
